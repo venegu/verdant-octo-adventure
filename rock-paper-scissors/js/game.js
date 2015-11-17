@@ -1,6 +1,11 @@
+function form(){
+    document.getElementById('scissors').style.display = 'none';
+    document.getElementById('game_form').style.display = 'block';
+}
 function scissors() {
     document.getElementById('paper').style.display = 'none';
     document.getElementById('scissors').style.display = 'block';
+    setTimeout(form, 2000);
 }
 
 function paper() {

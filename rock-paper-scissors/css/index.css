@@ -91,9 +91,12 @@ button {
     height: auto;
     width: 100%;
 }
+/****
+  Form
+****/
 
 #game_form {
-    /*display:none;*/
+    display:none;
     width: 100%;
     margin: 0 auto;
     text-align: center;
