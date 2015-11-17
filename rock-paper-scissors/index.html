@@ -4,107 +4,18 @@
 <head>
     <meta charset=utf-8 />
     <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="css/index.css" />
 </head>
 
 <body>
-    <style>
-        /***
-            Body
-        ***/
-        /*body {
-            background-color: #ECECEA;
-        }*/
-        /****
-          Text
-        ****/
-        @import url(http://fonts.googleapis.com/css?family=Lato);
-            h1, h2, h3, h4, h5, h6, p, button, label {
-                font-family: Lato, sans-serif;
-        }
-
-        .center{
-            text-align: center;
-        }
-
-        /****
-           Button
-        ****/
-        button {
-            display:block; /*change this from inline-block */
-            width: 100px; /* setting the width */
-            height: 35px;
-            margin:0 auto; /* this will center  it */
-            position:relative;
-            font-size:20px;
-            color:#fff;
-            border:none;
-            border-radius:.23em;
-            background-color:#558C89;
-            border-bottom:1px solid #74AFAD;
-        }
-
-        /****
-          Image Show :)
-        ****/
-        #parent {
-            padding: 5% 0;
-        }
-
-        #child {
-            padding: 10% 0;
-        }
-
-        #rock {
-            display:none;
-            /*visibility: hidden;*/
-            height: auto;
-            width: 300px;
-        }
-        #paper {
-            display:none;
-            /*visibility: hidden;*/
-            height: auto;
-            width: 300px;
-        }
-
-        #scissors {
-            display:none;
-            /*visibility: hidden;*/
-            height:auto;
-            width:300px;
-        }
-
-        .images {
-            margin-left: auto;
-            margin-right: auto;
-            height:auto;
-            width:100%;
-        }
-
-        #game_form {
-            /*display:none;*/
-            width:100%;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .no-center {
-            text-align: initial;
-        }
-
-        .left {
-            text-align: left;
-        }
-
-    </style>
     <div>
         <h1 class="center">Rock, Paper, Scissors</h1>
         <div id="parent">
             <div id="child">
                 <button id="play_button" onclick="startGame()">Play!</button>
-                <img id="rock" class="images" src="../Downloads/rock.jpg">
-                <img id="paper" class="images" src="../Downloads/paper.jpg">
-                <img id="scissors" class="images" src="../Downloads/scissors1.jpg">
+                <img id="rock" class="images" src="img/rock.jpg">
+                <img id="paper" class="images" src="img/paper.jpg">
+                <img id="scissors" class="images" src="img/scissors1.jpg">
                 <div id="game_form">
                 <form id="game_form">
                     <h3 class="center">Pick one: </h3>
@@ -117,31 +28,7 @@
             </div>
         </div>
     </div>
-
-    <script>
-        function scissors() {
-            document.getElementById('paper').style.display = 'none';
-            document.getElementById('scissors').style.display = 'block';
-        }
-
-        function paper() {
-            document.getElementById('rock').style.display = 'none';
-            document.getElementById('paper').style.display = 'block';
-            setTimeout(scissors, 2000);
-        }
-
-        function startGame() {
-            //document.body.removeChild(document.getElementById('play_button'));
-            document.getElementById('play_button').style.display = 'none';
-            document.getElementById('rock').style.display = 'block';
-            setTimeout(paper, 2000);
-        }
-
-
-
-
-
-    </script>
+    <script src="js/game.js"></script>
 </body>
 
 </html>

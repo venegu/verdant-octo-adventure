@@ -1,0 +1,108 @@
+/***
+    Body
+***/
+
+
+/*body {
+    background-color: #ECECEA;
+}*/
+
+
+/****
+    Text
+****/
+
+@import url(http://fonts.googleapis.com/css?family=Lato);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+label {
+    font-family: Lato, sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/****
+    Button
+****/
+
+button {
+    display: block;
+    /*change this from inline-block */
+    width: 100px;
+    /* setting the width */
+    height: 35px;
+    margin: 0 auto;
+    /* this will center  it */
+    position: relative;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: .23em;
+    background-color: #558C89;
+    border-bottom: 1px solid #74AFAD;
+}
+
+
+/****
+    Image Show :)
+****/
+
+#parent {
+    padding: 5% 0;
+}
+
+#child {
+    padding: 10% 0;
+}
+
+#rock {
+    display: none;
+    /*visibility: hidden;*/
+    height: auto;
+    width: 300px;
+}
+
+#paper {
+    display: none;
+    /*visibility: hidden;*/
+    height: auto;
+    width: 300px;
+}
+
+#scissors {
+    display: none;
+    /*visibility: hidden;*/
+    height: auto;
+    width: 300px;
+}
+
+.images {
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
+}
+
+#game_form {
+    /*display:none;*/
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.no-center {
+    text-align: initial;
+}
+
+.left {
+    text-align: left;
+}
