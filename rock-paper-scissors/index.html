@@ -10,6 +10,7 @@
 <body>
     <div>
         <h1 class="center">Rock, Paper, Scissors</h1>
+        <img class="images" src="img/rock-paper-lolworm.jpg" vertical-align="middle">
         <div id="parent">
             <div id="child">
                 <button id="play_button" onclick="startGame()">Play!</button>
@@ -20,9 +21,9 @@
                 <form id="game_form">
                     <h3 class="center">Pick one:</h3>
                     <div>
-                        <div><input class="left" type="radio" name="rps" value="Rock"><label>Rock</label></div>
-                        <div><input class="left" type="radio" name="rps" value="Paper" style="margin-left:9px;"><label>Paper</label></div>
-                        <div><input class="left" type="radio" name="rps" value="Scissors" style="margin-left:24px;"><label>Scissors</label></div>
+                        <div><input class="left" type="radio" name="rps" value="Rock" onclick="choice()"><label>Rock</label></div>
+                        <div><input class="left" type="radio" name="rps" value="Paper" style="margin-left:9px;" onclick="choice()"><label>Paper</label></div>
+                        <div><input class="left" type="radio" name="rps" value="Scissors" style="margin-left:24px;" onclick="choice()"><label>Scissors</label></div>
                     </div>
                 </form>
             </div>
