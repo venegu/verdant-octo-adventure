@@ -2,7 +2,9 @@
 This was a really sudden Rock, Paper, Scissors "game" I decided to make after thinking about different ways to change a webpage without a page reload. Messing around with the DOM seemed like a neat, but verbose way to do this! Another way, might be to use `iframes`. `iframes` allow you to embed another document into your HTML (could it be inception?).
 
 ## Test It Out
-To play it you will need to clone this repo:
+You can play my silly game online at [venegu.github.io/rock-paper-scissors/](venegu.github.io/rock-paper-scissors/).
+
+or you can clone the original project repo:
 
 ```
 git clone https://github.com/venegu/verdant-octo-adventure.git
