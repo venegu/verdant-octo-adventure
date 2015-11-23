@@ -40,27 +40,27 @@ function choice() {
         if (choice[i].checked) {
             if(choice[i].value === "Rock") {
                 if(compChoice[random] === "Rock") {
-                    alert("Rock =  "+ choice[i].value + ", Rock = " +compChoice[random] + ", tie!");
+                    alert(choice[i].value + ", " + compChoice[random] + ", tie!");
                 } else if(compChoice[random] === "Paper") {
-                    alert("Rock =  "+ choice[i].value + ", Paper = " +compChoice[random] + ", You lose!");
+                    alert(choice[i].value + ", " + compChoice[random] + ", You lose!");
                 } else {
-                    alert("User: Rock =  "+ choice[i].value  + ", Comp: Scissors = " +compChoice[random] + ", You win!");
+                    alert(choice[i].value + ", " + compChoice[random] + ", You win!");
                 }
             } else if (choice[i].value === "Paper") {
                 if(compChoice[random] === "Rock") {
-                    alert("Paper , Rock , You win!");
+                    alert(choice[i].value + ", " + compChoice[random] + ", You win!");
                 } else if(compChoice[random] === "Paper") {
-                    alert("Paper, Paper, tie!");
+                    alert(choice[i].value + ", " + compChoice[random] +  ", tie!");
                 } else {
-                    alert("Paper, Scissors, You lose!");
+                    alert(choice[i].value + ", " + compChoice[random] +  ", You lose!");
                 }
             } else if (choice[i].value === "Scissors") {
                 if(compChoice[random] === "Rock") {
-                    alert("Scissors , Rock , You lose!");
+                    alert(choice[i].value + ", " + compChoice[random] +  ", You lose!");
                 } else if(compChoice[random] === "Paper") {
-                    alert("Scissors, Paper, You win!");
+                    alert(choice[i].value + ", " + compChoice[random] +  ", You win!");
                 } else {
-                    alert("Scissors, Scissors, tie!");
+                    alert(choice[i].value + ", " + compChoice[random] +  ", tie!");
                 }
             }
         }
